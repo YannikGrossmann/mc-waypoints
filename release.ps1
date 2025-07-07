@@ -6,4 +6,4 @@ $compress = @{
 }
 Compress-Archive @compress -Update
 $fileHash = Get-FileHash ".\release.zip" -Algorithm SHA1
-Move-Item -Path ".\release.zip" -Destination ".\releases\v$version-$($fileHash.Hash)"
+Move-Item -Path ".\release.zip" -Destination ".\releases\v$version-$($fileHash.Hash).zip"
